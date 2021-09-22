@@ -6,6 +6,7 @@ public class SnakeAndLadder {
 		
 		//welcome message
 		System.out.println("**Welcome to the snake and ladder programs**");
+		System.out.println("************************************************");
 		System.out.println("=======Game Start=======");
 		
 		//playerOne started the game
