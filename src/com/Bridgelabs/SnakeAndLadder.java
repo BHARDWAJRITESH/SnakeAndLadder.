@@ -9,8 +9,7 @@ public class SnakeAndLadder {
 		System.out.println("=======Game Start=======");
 		
 		//playerOne started the game
-		//calling constructor
-		PlayerOne ritesh = new PlayerOne();      								//calling constructor
+		PlayerOne ritesh = new PlayerOne();      				//calling constructor of PlayerOne class
 	}
 
 }
