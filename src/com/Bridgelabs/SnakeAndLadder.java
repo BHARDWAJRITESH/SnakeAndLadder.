@@ -14,7 +14,7 @@ public class SnakeAndLadder {
 		
 		//playerOne started the game
 		 new PlayerOne();      				//calling constructor of PlayerOne class
-		 new TwoPlayerGame();
+		 new TwoPlayerGame();				//calling constructor of TwoPlayerGame class
 		 
 		 
 
