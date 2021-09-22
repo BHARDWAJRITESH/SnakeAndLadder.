@@ -12,5 +12,4 @@ public class SnakeAndLadder {
 		//playerOne started the game
 		PlayerOne ritesh = new PlayerOne();      				//calling constructor of PlayerOne class
 	}
-
 }

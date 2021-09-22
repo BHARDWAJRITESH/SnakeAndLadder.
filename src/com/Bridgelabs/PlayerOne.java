@@ -31,21 +31,29 @@ public class PlayerOne {
 					System.out.println("======== Ladder comes ========");
 				
 					// adding condition to reach winning position
-					if(playerPosition + diceRoll <= 100) {
-						playerPosition += diceRoll;
-					}
-					else if(playerPosition + diceRoll > 100) {
-					continue;
-					}
+					playerPosition = playerPosition + diceRoll;
+					
+						if(playerPosition >100) {
+							playerPosition = playerPosition - diceRoll;
+						}
+						else if(playerPosition + diceRoll > 100) {
+						
+							continue;
+						}
 				}
 				else {
 					System.out.println("======== Snake comes ========");
-						if ((playerPosition - diceRoll) < 0) {
+					playerPosition = playerPosition - diceRoll;
+						if (playerPosition  < 0) 
 							playerPosition = 0;
-						} else{
-						playerPosition-=diceRoll;
-						}
-		 }			
+						} 
+						
+						
+		 }
+		
+		 System.out.println("Current Position of player Ritesh is: "+playerPosition);
 	   }	
-	}
 }
+
+	
+	
