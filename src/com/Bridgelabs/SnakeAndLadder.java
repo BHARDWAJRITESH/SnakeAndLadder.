@@ -1,8 +1,7 @@
 package com.Bridgelabs;
 
 
-public class SnakeAndLadder {
-	 
+public class SnakeAndLadder extends TwoPlayerGame {
 		
 	public static void main(String[] args) {
 		 
@@ -14,9 +13,14 @@ public class SnakeAndLadder {
 		
 		//playerOne started the game
 		 new PlayerOne();      				//calling constructor of PlayerOne class
-		 new TwoPlayerGame();				//calling constructor of TwoPlayerGame class
 		 
-		 
-
+		 System.out.println("Welcome to Snake and Ladder Game");
+			while (true) {
+				if (playerRitesh == winningPosition || playerYash == winningPosition) {
+					break;
+				}
+				playgame();
+			}
+			System.out.println("Number of time dice has rolled is: " + diceRollCount);
 	}
 }

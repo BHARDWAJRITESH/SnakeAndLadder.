@@ -1,27 +1,25 @@
 package com.Bridgelabs;
 
 public class TwoPlayerGame {
-			int playerRitesh = 0, playerYash = 0, winningPosition = 2, condition = 0, diceRollCount = 0;
-			int checkOption = (int) (Math.floor(Math.random() * 10 % 6 + 1));
-			int options = (int) (Math.floor(Math.random() * 10 % 3));
-	
+			 static int playerRitesh = 0, playerYash = 0, winningPosition = 10, condition = 0, diceRollCount = 0;
 			
-			TwoPlayerGame(){
-				while (true) {
-						if (playerRitesh == winningPosition || playerYash == winningPosition) {
-							break;
-						}
-						playgame();
-				}
-			}
+			 private static int checkOption() {
+					int rollValue = (int) (Math.floor(Math.random() * 10 % 6 + 1));
+					return rollValue;
 
-	
-			void playgame() {
+				}
+
+				private static int options() {
+					int option = (int) (Math.floor(Math.random() * 10 % 3));
+					return option;
+				}	
+			
+			static void playgame() {
 				if (condition == 0) {
 						diceRollCount++;
-						int diceRoll = checkOption;
+						int diceRoll = checkOption();
 						System.out.println("Dice roll value: " + diceRoll);
-						int checkOption = options;
+						int checkOption = options();
 			
 						switch (checkOption) {
 							case 0:
@@ -49,9 +47,9 @@ public class TwoPlayerGame {
 						}
 				} else {
 					diceRollCount++;
-					int diceRoll = checkOption;
+					int diceRoll = checkOption();
 					System.out.println("Dice roll value: " + diceRoll);
-					int checkOption = options;
+					int checkOption = options();
 			
 					switch (checkOption) {
 						case 0:
